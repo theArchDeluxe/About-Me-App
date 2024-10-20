@@ -130,6 +130,9 @@
                             <constraint firstItem="wcC-xX-SaI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RGS-WJ-2Dr" secondAttribute="trailing" id="zH7-yp-mND"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="ZmJ-bB-MPz" id="E9j-a7-WKL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1R-nL-bRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
