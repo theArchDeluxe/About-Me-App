@@ -33,15 +33,3 @@ final class WelcomeViewController: UIViewController {
     }
 }
 
-// MARK: - Background Color Settings
-extension UIView {
-    func addVerticalGradientLayer(topColor: UIColor, bottomColor: UIColor) {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = bounds
-        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
-        gradientLayer.locations = [0.0, 1.0]
-        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
-        gradientLayer.endPoint = CGPoint(x: 0, y: 1)
-        layer.insertSublayer(gradientLayer, at: 0)
-    }
-}

@@ -147,18 +147,18 @@
         <scene sceneID="eM0-yw-Ff2">
             <objects>
                 <viewController id="qoT-Wz-gyP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hPu-uq-ipx">
+                    <view key="view" contentMode="scaleToFill" id="hPu-uq-ipx" customClass="User">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💁🏻‍♂️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOi-3S-t9f">
-                                <rect key="frame" x="83" y="62" width="154" height="118"/>
+                                <rect key="frame" x="127" y="56" width="66" height="77"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="66"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cfP-pk-dSf">
-                                <rect key="frame" x="16" y="218" width="288" height="106"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cfP-pk-dSf">
+                                <rect key="frame" x="16" y="171" width="288" height="106"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="WMf-da-YxM">
                                         <rect key="frame" x="0.0" y="0.0" width="98.5" height="20.5"/>
@@ -234,12 +234,19 @@
                         <viewLayoutGuide key="safeArea" id="etw-6r-NbJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="iOi-3S-t9f" firstAttribute="centerX" secondItem="hPu-uq-ipx" secondAttribute="centerX" id="AtJ-2r-k1h"/>
                             <constraint firstItem="cfP-pk-dSf" firstAttribute="top" secondItem="iOi-3S-t9f" secondAttribute="bottom" constant="38" id="BpN-2B-fDm"/>
+                            <constraint firstItem="iOi-3S-t9f" firstAttribute="top" secondItem="etw-6r-NbJ" secondAttribute="top" id="GIJ-54-WWQ"/>
+                            <constraint firstItem="iOi-3S-t9f" firstAttribute="leading" secondItem="etw-6r-NbJ" secondAttribute="leading" constant="127" id="HBk-i9-8U6"/>
                             <constraint firstItem="cfP-pk-dSf" firstAttribute="leading" secondItem="etw-6r-NbJ" secondAttribute="leading" constant="16" id="RiP-kX-sgC"/>
+                            <constraint firstItem="etw-6r-NbJ" firstAttribute="trailing" secondItem="iOi-3S-t9f" secondAttribute="trailing" constant="127" id="fwl-po-yBU"/>
                             <constraint firstItem="etw-6r-NbJ" firstAttribute="trailing" secondItem="cfP-pk-dSf" secondAttribute="trailing" constant="16" id="l3b-iU-w2Y"/>
-                            <constraint firstItem="iOi-3S-t9f" firstAttribute="centerY" secondItem="hPu-uq-ipx" secondAttribute="centerY" id="p0C-bt-u4s"/>
                         </constraints>
+                        <connections>
+                            <outlet property="companyLabel" destination="y1k-qm-VHQ" id="hmS-Uh-fwc"/>
+                            <outlet property="jobTitleLabel" destination="aQ5-UY-6Dr" id="K4b-X4-dVc"/>
+                            <outlet property="lastnameLabel" destination="czT-ow-pcr" id="Nbt-4P-Cew"/>
+                            <outlet property="nameLabel" destination="w1u-eo-UIO" id="Kb5-Z5-TVz"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="nGS-Gr-DHa"/>
                 </viewController>
@@ -253,6 +260,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JIU-PS-WbA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YFH-hq-OlG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

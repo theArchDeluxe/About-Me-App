@@ -12,8 +12,14 @@ final class LoginViewController: UIViewController {
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    private let user = "Alex"
-    private let password = "Password"
+    private let user = User.getUser()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        userNameTextField.text = user.login
+        passwordTextField.text = user.password
+        print("User ID: ", user.id)
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let welcomeVC = segue.destination as? WelcomeViewController
@@ -27,7 +33,7 @@ final class LoginViewController: UIViewController {
     
     override func shouldPerformSegue(
         withIdentifier identifier: String, sender: Any?) -> Bool {
-        guard userNameTextField.text == user, passwordTextField.text == password else {
+            guard userNameTextField.text == user.login, passwordTextField.text == user.password else {
             showAlert(
                 withTitle: "Invalid login or password",
                 andMessage: "Please, enter correct login or password") {
@@ -39,11 +45,11 @@ final class LoginViewController: UIViewController {
     }
         
     @IBAction func forgotUsername(_ sender: UIButton) {
-        showAlert(withTitle: "Oops!", andMessage: "Your name is \(user)")
+        showAlert(withTitle: "Oops!", andMessage: "Your name is \(user.login)")
     }
     
     @IBAction func forgotPassword(_ sender: UIButton) {
-        showAlert(withTitle: "Oops!", andMessage: "Your password is \(password)")
+        showAlert(withTitle: "Oops!", andMessage: "Your password is \(user.password)")
     }
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         userNameTextField.text = ""
