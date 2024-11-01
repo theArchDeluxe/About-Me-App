@@ -9,6 +9,7 @@ import UIKit
 
 class UserInfoViewController: UIViewController {
 
+    
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var lastnameLabel: UILabel!
     @IBOutlet var companyLabel: UILabel!
@@ -23,15 +24,11 @@ class UserInfoViewController: UIViewController {
         nameLabel.text = user.person.name
         lastnameLabel.text = user.person.lastname
         jobTitleLabel.text = user.person.job.title
-        jobTitleLabel.text = user.person.job.jobTitle.rawValue
+        jobTitleLabel.text = user.person.job.jobTitle
         
     }
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let userBioVC = segue.destination as? UserBioViewController
-        userBioVC?.user = user
-    }
-
+}
+    
     
 
-}
+

@@ -90,7 +90,7 @@
         <!--Home-->
         <scene sceneID="3k4-eW-cCG">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="vEf-76-bwQ" customClass="WelcomeViewController" customModule="About_Me_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vEf-76-bwQ" customClass="WelcomeViewController" customModule="About_Me_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uba-X9-Bob">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,11 +143,11 @@
             </objects>
             <point key="canvasLocation" x="113" y="837"/>
         </scene>
-        <!--View Controller-->
+        <!--User Info View Controller-->
         <scene sceneID="eM0-yw-Ff2">
             <objects>
-                <viewController id="qoT-Wz-gyP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hPu-uq-ipx" customClass="User">
+                <viewController id="qoT-Wz-gyP" customClass="UserInfoViewController" customModule="About_Me_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hPu-uq-ipx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -241,14 +241,14 @@
                             <constraint firstItem="etw-6r-NbJ" firstAttribute="trailing" secondItem="iOi-3S-t9f" secondAttribute="trailing" constant="127" id="fwl-po-yBU"/>
                             <constraint firstItem="etw-6r-NbJ" firstAttribute="trailing" secondItem="cfP-pk-dSf" secondAttribute="trailing" constant="16" id="l3b-iU-w2Y"/>
                         </constraints>
-                        <connections>
-                            <outlet property="companyLabel" destination="y1k-qm-VHQ" id="hmS-Uh-fwc"/>
-                            <outlet property="jobTitleLabel" destination="aQ5-UY-6Dr" id="K4b-X4-dVc"/>
-                            <outlet property="lastnameLabel" destination="czT-ow-pcr" id="Nbt-4P-Cew"/>
-                            <outlet property="nameLabel" destination="w1u-eo-UIO" id="Kb5-Z5-TVz"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="nGS-Gr-DHa"/>
+                    <connections>
+                        <outlet property="companyLabel" destination="y1k-qm-VHQ" id="GEn-7H-tgT"/>
+                        <outlet property="jobTitleLabel" destination="aQ5-UY-6Dr" id="tMS-Fi-jt0"/>
+                        <outlet property="lastnameLabel" destination="czT-ow-pcr" id="KC0-yt-d4Z"/>
+                        <outlet property="nameLabel" destination="w1u-eo-UIO" id="o4C-dD-koh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2wT-qx-jJd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
