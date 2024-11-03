@@ -135,7 +135,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="person.fill" catalog="system" id="vjc-Uc-mff"/>
                     <connections>
-                        <outlet property="welcomeLabel" destination="ZmJ-bB-MPz" id="E9j-a7-WKL"/>
+                        <outlet property="welcomeLabel" destination="ZmJ-bB-MPz" id="WKz-LP-x6F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1R-nL-bRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

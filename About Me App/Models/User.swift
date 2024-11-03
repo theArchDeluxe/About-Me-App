@@ -8,7 +8,6 @@
 import Foundation
 
 struct User {
-    let id = UUID()
     let login: String
     let password: String
     let person: Person
@@ -31,7 +30,7 @@ struct Person {
         Person (
         name: "Alexey",
         lastname: "Yelfimov",
-        job: Company
+        job: Company.getCompany()
         )
     }
     
@@ -39,6 +38,10 @@ struct Person {
 struct Company {
     let title: String
     let jobTitle: String
+    
+    static func getCompany() -> Company {
+        Company(title: "Yandex", jobTitle: "Advertising Manager")
+    }
 }
 
 

@@ -18,7 +18,6 @@ final class LoginViewController: UIViewController {
         super.viewDidLoad()
         userNameTextField.text = user.login
         passwordTextField.text = user.password
-        print("User ID: ", user.id)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
