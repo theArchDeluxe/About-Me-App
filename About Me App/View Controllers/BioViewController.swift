@@ -15,10 +15,14 @@ class BioViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        guard let user = user else {
+            print("User is nil")
+            return
+        }
+        
+        view.addVerticalGradientLayer()
+        title = "\(user.person.fullName)"
+        BioTextLabel.text = user.person.bio
     }
-    
-
-    
 }

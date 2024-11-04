@@ -251,7 +251,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="jobLabel" destination="y1k-qm-VHQ" id="frO-Nh-VSs"/>
-                        <outlet property="jobTitle" destination="aQ5-UY-6Dr" id="obt-Pv-MYb"/>
+                        <outlet property="jobTitleLabel" destination="aQ5-UY-6Dr" id="LV0-Pc-rUK"/>
                         <outlet property="lastnameLabel" destination="czT-ow-pcr" id="HpE-Mn-jC0"/>
                         <outlet property="nameLabel" destination="w1u-eo-UIO" id="qyZ-o9-Ex5"/>
                     </connections>

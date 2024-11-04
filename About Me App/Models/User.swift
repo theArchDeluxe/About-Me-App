@@ -20,7 +20,9 @@ struct User {
 struct Person {
     let name: String
     let lastname: String
+    let bio: String
     let job: Company
+    
     
     var fullName: String {
         "\(name) \(lastname)"
@@ -30,6 +32,7 @@ struct Person {
         Person (
         name: "Alexey",
         lastname: "Yelfimov",
+        bio: "Тройка по биографии",
         job: Company.getCompany()
         )
     }
