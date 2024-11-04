@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		8A61989F2CBE22A30081128E /* Exceptions for "About Me App" folder in "About Me App" target */ = {
+		8A1E04152CD8D99100378601 /* Exceptions for "Supportin Files" folder in "About Me App" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -21,11 +21,16 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8A61988F2CBE22A10081128E /* About Me App */ = {
+		8A1E04112CD8D99100378601 /* Supportin Files */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				8A61989F2CBE22A30081128E /* Exceptions for "About Me App" folder in "About Me App" target */,
+				8A1E04152CD8D99100378601 /* Exceptions for "Supportin Files" folder in "About Me App" target */,
 			);
+			path = "Supportin Files";
+			sourceTree = "<group>";
+		};
+		8A61988F2CBE22A10081128E /* About Me App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "About Me App";
 			sourceTree = "<group>";
 		};
@@ -46,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				8A61988F2CBE22A10081128E /* About Me App */,
+				8A1E04112CD8D99100378601 /* Supportin Files */,
 				8A61988E2CBE22A10081128E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +80,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				8A1E04112CD8D99100378601 /* Supportin Files */,
 				8A61988F2CBE22A10081128E /* About Me App */,
 			);
 			name = "About Me App";
@@ -147,7 +154,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9GUT847JBJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "About Me App/Info.plist";
+				INFOPLIST_FILE = "Supportin Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -179,7 +186,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9GUT847JBJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "About Me App/Info.plist";
+				INFOPLIST_FILE = "Supportin Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

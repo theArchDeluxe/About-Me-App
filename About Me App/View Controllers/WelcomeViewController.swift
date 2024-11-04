@@ -17,6 +17,11 @@ final class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            let userInfoViewController = segue.destination as? UserInfoViewController
+            userInfoViewController!.user = user
+            }
+            
         guard let user = user else {
             print("User is nil")
             return

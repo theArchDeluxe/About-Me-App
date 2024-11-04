@@ -242,17 +242,53 @@
                             <constraint firstItem="etw-6r-NbJ" firstAttribute="trailing" secondItem="cfP-pk-dSf" secondAttribute="trailing" constant="16" id="l3b-iU-w2Y"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="nGS-Gr-DHa"/>
+                    <navigationItem key="navigationItem" id="nGS-Gr-DHa">
+                        <barButtonItem key="rightBarButtonItem" title="Bio" id="k6O-Ig-VxZ">
+                            <connections>
+                                <segue destination="GCG-bk-xPw" kind="show" id="EQ1-GQ-jQh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="jobLabel" destination="y1k-qm-VHQ" id="f0e-9T-SbH"/>
-                        <outlet property="jobTitleLabel" destination="aQ5-UY-6Dr" id="20H-eh-45G"/>
-                        <outlet property="lastnameLabel" destination="czT-ow-pcr" id="MDq-vM-EWV"/>
-                        <outlet property="nameLabel" destination="w1u-eo-UIO" id="1EA-Iv-5Yh"/>
+                        <outlet property="jobLabel" destination="y1k-qm-VHQ" id="frO-Nh-VSs"/>
+                        <outlet property="jobTitle" destination="aQ5-UY-6Dr" id="obt-Pv-MYb"/>
+                        <outlet property="lastnameLabel" destination="czT-ow-pcr" id="HpE-Mn-jC0"/>
+                        <outlet property="nameLabel" destination="w1u-eo-UIO" id="qyZ-o9-Ex5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2wT-qx-jJd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1702.5" y="836.61971830985919"/>
+        </scene>
+        <!--Bio View Controller-->
+        <scene sceneID="Tig-rD-QgZ">
+            <objects>
+                <viewController id="GCG-bk-xPw" customClass="BioViewController" customModule="About_Me_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VxZ-lE-YLa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ylk-Kd-z6S">
+                                <rect key="frame" x="40" y="126" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NLm-JT-OYN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UTe-6u-7Dl"/>
+                    <connections>
+                        <outlet property="BioTextLabel" destination="ylk-Kd-z6S" id="aHH-Gu-gQJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="meR-nF-SoH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2468" y="837"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aBL-JU-F9z">
@@ -266,7 +302,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="vEf-76-bwQ" kind="relationship" relationship="viewControllers" id="kZz-fP-6rf"/>
-                        <segue destination="iEF-AC-bjp" kind="relationship" relationship="viewControllers" id="gff-Gq-svs"/>
+                        <segue destination="iEF-AC-bjp" kind="relationship" relationship="viewControllers" id="dNN-3F-92e"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IIN-gn-Y8a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -285,7 +321,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="qoT-Wz-gyP" kind="relationship" relationship="rootViewController" id="D7H-p4-wda"/>
+                        <segue destination="qoT-Wz-gyP" kind="relationship" relationship="rootViewController" id="dup-zg-QKA"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9W2-ay-B82" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -296,17 +332,20 @@
     <resources>
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
