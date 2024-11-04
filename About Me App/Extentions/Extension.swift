@@ -1,8 +1,8 @@
 //
-//  Extention.swift
+//  Extension.swift
 //  About Me App
 //
-//  Created by Alexey Elfimov on 01.11.2024.
+//  Created by Alexey Elfimov on 04.11.2024.
 //
 
 import UIKit

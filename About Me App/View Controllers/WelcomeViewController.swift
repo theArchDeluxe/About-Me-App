@@ -16,10 +16,12 @@ final class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         guard let user = user else {
             print("User is nil")
             return
         }
+        
         view.addVerticalGradientLayer()
         welcomeLabel.text = """
             Welcome, \(user.login)!

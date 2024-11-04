@@ -244,10 +244,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="nGS-Gr-DHa"/>
                     <connections>
-                        <outlet property="companyLabel" destination="y1k-qm-VHQ" id="GEn-7H-tgT"/>
-                        <outlet property="jobTitleLabel" destination="aQ5-UY-6Dr" id="tMS-Fi-jt0"/>
-                        <outlet property="lastnameLabel" destination="czT-ow-pcr" id="KC0-yt-d4Z"/>
-                        <outlet property="nameLabel" destination="w1u-eo-UIO" id="o4C-dD-koh"/>
+                        <outlet property="jobLabel" destination="y1k-qm-VHQ" id="f0e-9T-SbH"/>
+                        <outlet property="jobTitleLabel" destination="aQ5-UY-6Dr" id="20H-eh-45G"/>
+                        <outlet property="lastnameLabel" destination="czT-ow-pcr" id="MDq-vM-EWV"/>
+                        <outlet property="nameLabel" destination="w1u-eo-UIO" id="1EA-Iv-5Yh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2wT-qx-jJd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -266,7 +266,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="vEf-76-bwQ" kind="relationship" relationship="viewControllers" id="kZz-fP-6rf"/>
-                        <segue destination="iEF-AC-bjp" kind="relationship" relationship="viewControllers" id="bGc-pd-HYg"/>
+                        <segue destination="iEF-AC-bjp" kind="relationship" relationship="viewControllers" id="gff-Gq-svs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IIN-gn-Y8a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

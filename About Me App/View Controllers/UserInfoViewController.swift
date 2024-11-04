@@ -7,32 +7,33 @@
 
 import UIKit
 
-class UserInfoViewController: UIViewController {
+final class UserInfoViewController: UIViewController {
 
-    
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var lastnameLabel: UILabel!
-    @IBOutlet var companyLabel: UILabel!
+    @IBOutlet var jobLabel: UILabel!
     @IBOutlet var jobTitleLabel: UILabel!
+    
     
     var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         guard let user = user else {
             print("User is nil")
             return
         }
+        
         view.addVerticalGradientLayer()
         title = user.person.fullName
         nameLabel.text = user.person.name
         lastnameLabel.text = user.person.lastname
-        jobTitleLabel.text = user.person.job.title
+        jobLabel.text = user.person.job.title
         jobTitleLabel.text = user.person.job.jobTitle
         
     }
 }
-    
     
 
 
